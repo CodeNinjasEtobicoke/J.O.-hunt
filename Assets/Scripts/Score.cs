@@ -18,7 +18,16 @@ public class Score : MonoBehaviour
 
     public void AddScore(int points)
     {
-        score = score + points;
-        scoreText.text = "Score: " + score.ToString();
+        score = score + (points * 10);
+
+        if(score >= 69)
+        {
+            scoreText.text = "fuck yes " + score.ToString();
+        }
+        else
+        {
+            scoreText.text = "Score: " + score.ToString();
+        }
+
     }
 }
