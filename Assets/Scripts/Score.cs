@@ -26,7 +26,7 @@ public class Score : MonoBehaviour
         }
         else
         {
-            scoreText.text = "Score: " + score.ToString();
+            scoreText.text = "Score Balls: " + score.ToString();
         }
 
     }
